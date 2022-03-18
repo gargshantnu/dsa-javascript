@@ -3,6 +3,7 @@ function swap(arr, i, j) {
 }
 
 // If array is nearly sorted, bubble sort can perform best
+// Time complexity O(n^2)
 function bubbleSort(arr) {
     let didWeSwap = false;
     for (let i = arr.length - 1; i >= 0; i--) {
