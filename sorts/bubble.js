@@ -11,10 +11,10 @@ function bubbleSort(arr) {
         for (let j = 0; j < i; j++) {
             if (arr[j] > arr[j + 1]) {
                 swap(arr, j, j + 1);
-                didWeSwap = true
+                didWeSwap = true;
             }
         }
-        if (didWeSwap) {
+        if (!didWeSwap) {
             // Its short circuit, if didn't do swap in last run, we wont be making any in upcoming runs.
             break;
         }
