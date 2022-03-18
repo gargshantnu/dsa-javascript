@@ -6,6 +6,7 @@ function swap(arr, i, j) {
 // Time complexity O(n^2)
 function bubbleSort(arr) {
     let didWeSwap = false;
+    // In this we push biggest element to the end, one-by-one
     for (let i = arr.length - 1; i >= 0; i--) {
         for (let j = 0; j < i; j++) {
             if (arr[j] > arr[j + 1]) {
